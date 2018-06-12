@@ -30,7 +30,7 @@ body{
   transform: rotate(-45deg);
 }
 
-.booster{
+/* .booster{
   height: 50px;
   width: 50px;
   background: url("./flame_frames.png") 0 0 / 240px 80px no-repeat;
@@ -39,7 +39,7 @@ body{
   top: calc(50% + 33px);
   transform: rotate(90deg) scale(3);
   animation: boosters 0.5s steps(4) infinite;
-}
+} */
 
 /* -25,  -85, -145, -205*/
 
@@ -57,7 +57,7 @@ body{
 
 }
 
-@keyframes boosters {
+/* @keyframes boosters {
 
   0%{
     background-position: -25px -2px;
@@ -68,4 +68,4 @@ body{
       background-position: -265px -2px;
     }
 
-}
+} */
