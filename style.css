@@ -30,6 +30,18 @@ body{
   transform: rotate(-45deg);
 }
 
+.booster{
+  height: 50px;
+  width: 50px;
+  background: url("./flame_frames.png") 0 0 / 240px 80px no-repeat;
+  position: absolute;
+  right: -57px;
+  top: calc(50% + 33px);
+  transform: rotate(90deg) scale(3);
+  animation: boosters 0.5s steps(4) infinite;
+}
+
+/* -25,  -85, -145, -205*/
 
 
 @keyframes orbit {
@@ -42,5 +54,18 @@ body{
   to{
     transform: rotate(-360deg);
   }
+
+}
+
+@keyframes boosters {
+
+  0%{
+    background-position: -25px -2px;
+  }
+
+
+    100%{
+      background-position: -265px -2px;
+    }
 
 }
