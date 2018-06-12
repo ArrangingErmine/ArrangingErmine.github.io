@@ -1,100 +1,46 @@
-#sun,#sun2{
-  height: 150px;
-  width: 150px;
+body{
+  background-color: #bdf9ee;
 }
 
-h1{
-  font-family: arial;
-  /* transition: attribute length function delay */
-  transition: color 300ms linear;
-}
-
-h1:hover{
-  color: #dcdd8d;
-}
-
-.cool h2 {
-  font-family: arial;
-  border-style: solid;
-  border-color: #feffce;
-  border-width: 2px;
-  padding: 5px;
-  border-radius: 20px;
-  background-color: #ddc368;
-  transition: all 200ms linear;
-}
-
-h2:hover{
-  border-radius: 50px;
-  border-width: 7px;
-  padding: 15px;
-  background-color: #fcedba;
-}
-
-#sun{
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transition: all 1000ms ease;
-
-}
-#sun:hover{
-  transform: rotate(360deg) scale(1.5);
-}
-
-/* #sun2{
-  left: -50px;
-  overflow: hidden;
-  transition: transform 1000ms ease;
-}
-#sun2:hover{
-  transform: rotate(360deg);
-} */
-
-#windows{
-  height: 25em;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-figure{
+.moon-wrapper{
+  margin: 12em 0;
   position: relative;
-  overflow: hidden;
 }
 
-figcaption{
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border-radius: 2em;
-  position: absolute;
-  bottom: -70px;
-  right: 10px;
-  transition: all 700ms ease;
-  transform: rotate(-30deg);
-  transform-origin: right center;
-}
-
-figure:hover figcaption{
-  bottom: 10px;
-  transform: rotate(0);
-}
-
-.unit {
+.moon{
   width: 400px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
 
-.hover-box{
-  display: block;
+
+.rocket{
+  width: 40px;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: -60px;
+  animation: orbit 7s linear infinite;
+  transform-origin: center 270px;
+
 }
 
-.hover-box img{
-  display: block;
-  width: 100%
+#ship {
+  transform: rotate(-45deg);
+}
+
+
+
+@keyframes orbit {
+
+  from{
+    transform: rotate(0deg);
+
+  }
+
+  to{
+    transform: rotate(-360deg);
+  }
 
 }
